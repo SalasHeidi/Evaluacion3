@@ -1,0 +1,26 @@
+@server = https://evaluacion3-c638.onrender.com
+@Api= https://evaluacion3-c638.onrender.com/api/ec3
+
+
+###
+GET https://evaluacion3-c638.onrender.com/api/ec3/categorias
+###
+POST https://evaluacion3-c638.onrender.com/api/ec3/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Cuerda"}
+
+###
+GET https://evaluacion3-c638.onrender.com/api/ec3/instrumentos
+###
+POST https://evaluacion3-c638.onrender.com/api/ec3/instrumentos
+Content-Type: application/json
+
+{"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/1"}
+
+###
+GET https://evaluacion3-c638.onrender.com/api/ec3/instrumentos/1/categoria
+
+####
+
+GET https://evaluacion3-c638.onrender.com/api/ec3/instrumentos?sort=nombre,desc
